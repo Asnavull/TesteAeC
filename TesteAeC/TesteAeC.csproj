@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.Support" Version="4.8.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.8.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="111.0.5563.6400" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TesteAeC.Business\TesteAeC.Business.csproj" />
+    <ProjectReference Include="..\TesteAeC.Model\TesteAeC.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Selenium.Util">
+      <HintPath>Dlls\Selenium.Util.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TesteAeC": {
+      "commandName": "Project",
+      "commandLineArgs": "Automação"
+    }
+  }
+}
