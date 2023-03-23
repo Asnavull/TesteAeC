@@ -12,12 +12,20 @@ namespace TesteAeCApi.Controllers
     {
         private readonly IPesquisaAeC _pesquisaAeC;
 
+        /// <summary>
+        /// Construtor do controller.
+        /// </summary>
+        /// <param name="pesquisaAeC">Serviço de pesquisa na AeC</param>
         public SearchController(IPesquisaAeC pesquisaAeC)
         {
             _pesquisaAeC = pesquisaAeC;
         }
 
-        // GET api/<SearchController>/5
+        /// <summary>
+        /// Endpoint para pesquisa.
+        /// </summary>
+        /// <param name="pesquisa">O termo a ser pesquisado.</param>
+        /// <returns>Os resultados da pesquisa.</returns>
         [HttpGet("{pesquisa}")]
         [ProducesResponseType(typeof(RetornoPesquisa), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

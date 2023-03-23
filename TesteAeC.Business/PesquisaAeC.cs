@@ -7,15 +7,21 @@ using TesteAeC.Model.Models;
 
 namespace TesteAeC.Business
 {
+    /// <inheritdoc/>
     public class PesquisaAeC : IPesquisaAeC
     {
         private readonly Browser _browser;
 
+        /// <summary>
+        /// Construtor do serviço
+        /// </summary>
+        /// <param name="browser">Browser a ser utilizado na pesquisa.</param>
         public PesquisaAeC(Browser browser)
         {
             _browser = browser;
         }
 
+        /// <inheritdoc/>
         public RetornoPesquisa Pesquisar(string pesquisa)
         {
             //Direciona o browser para o endereço
